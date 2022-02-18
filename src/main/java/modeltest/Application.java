@@ -1,6 +1,5 @@
 package modeltest;
 
-import modeltest.Calulation;
 
 public class Application {
     private Calulation calulation;
@@ -10,6 +9,12 @@ public class Application {
 
         return sum > 10.0;
     }
+
+    public  boolean checkAverage(Double a, Double b) {
+        Double check = Calulation.average(a,b);
+        return check > 5.0;
+    }
+
 
     public Calulation getCalulation() {
         return calulation;

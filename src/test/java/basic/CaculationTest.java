@@ -1,9 +1,11 @@
 package basic;
 
 import modeltest.Calulation;
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
+import java.util.Optional;
+
 
 public class CaculationTest {
 
@@ -15,6 +17,6 @@ public class CaculationTest {
 
         Long c = calulation.sum(a, b);
 
-        assertEquals(15, c);
+        Assertions.assertEquals(15L,c);
     }
 }

@@ -1,10 +1,13 @@
 package basic;
 
 import modeltest.Application;
-import org.junit.jupiter.api.Assertions;
-import org.junit.jupiter.api.Test;
+import modeltest.Calulation;
+import org.junit.Test;
+
+import static org.junit.Assert.assertEquals;
 
 public class ApplicationTest {
+
     @Test
     public void checkTest() {
         Application application = new Application();
@@ -12,9 +15,11 @@ public class ApplicationTest {
         Long a = 10L;
         Long b = 5L;
 
+        application.setCalulation(new Calulation());
+
         boolean check = application.check(a, b);
 
-        Assertions.assertEquals(true, check);
+        assertEquals(true, check);
 
     }
 }
