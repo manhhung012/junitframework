@@ -26,11 +26,11 @@ public class ApplicationTestPowerMockTest {
     public void checkAveragePowerMockStatic() {
         PowerMockito.mockStatic(Calulation.class);
 
-        when(Calulation.average(10.0,8.0)).thenReturn(9.0);
+        when(Calulation.average(10.0, 8.0)).thenReturn(9.0);
 
         Application application = new Application();
 
-        Assertions.assertTrue(application.checkAverage(10.0,8.0));
+        Assertions.assertTrue(application.checkAverage(10.0, 8.0));
     }
 
 

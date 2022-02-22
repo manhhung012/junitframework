@@ -10,8 +10,8 @@ public class Application {
         return sum > 10.0;
     }
 
-    public  boolean checkAverage(Double a, Double b) {
-        Double check = Calulation.average(a,b);
+    public boolean checkAverage(Double a, Double b) {
+        Double check = Calulation.average(a, b);
         return check > 5.0;
     }
 

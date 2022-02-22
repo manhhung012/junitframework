@@ -8,11 +8,11 @@ public class Calulation implements ICaculation {
         return a + b;
     }
 
-    public static Double average(Double a, Double b){
-        return (a+b)/2;
+    public static Double average(Double a, Double b) {
+        return (a + b) / 2;
     }
 
-    private Long tru(Long a, Long b){
-        return a-b;
+    private Long tru(Long a, Long b) {
+        return a - b;
     }
 }
